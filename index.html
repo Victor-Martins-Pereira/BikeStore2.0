@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="E-commerce especializado em bicicletas de diversos tipos, incluindo mountain bike, urbana, speed, infantil, dobrável e elétrica.">
+    <meta name="keywords"
+        content="bicicleta, e-commerce, bike, mountain bike, bicicleta urbana, bicicleta speed, bicicleta infantil, bicicleta dobrável, bicicleta elétrica">
+    <!-- Meta tags para SEO e redes sociais -->
+    <meta property="og:title" content="E-commerce de Bicicletas - BikeStore">
+    <meta property="og:description"
+        content="Encontre as melhores bicicletas e acessórios na BikeStore. Oferecemos mountain bike, urbana, speed, infantil, dobrável e elétrica.">
+    <meta property="og:image" content="https://exemplo.com/imagem-destaque.jpg">
+    <meta property="og:url" content="https://www.bikestore.com">
+    <title>E-commerce de Bicicletas - BikeStore</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#" aria-label="BikeStore - Página inicial">BikeStore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos" aria-label="Produtos">
+                                <i class="bi bi-bicycle me-2" aria-hidden="true"></i>Produtos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre" aria-label="Sobre">
+                                <i class="bi bi-info-circle me-2" aria-hidden="true"></i>Sobre
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato" aria-label="Contato">
+                                <i class="bi bi-envelope me-2" aria-hidden="true"></i>Contato
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#carrinhoOffcanvas" aria-label="Abrir carrinho de compras">
+                        <i class="bi bi-cart3" aria-hidden="true"></i> Carrinho <span id="cart-count"
+                            class="badge bg-danger">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <!-- Seção de Produtos -->
+        <section id="produtos" class="mb-5" aria-labelledby="produtos-heading">
+            <h2 id="produtos-heading" class="text-center mb-4">Nossos Produtos</h2>
+            <div class="row" id="produtos-container">
+                <!-- Card 1 - Bicicleta Mountain Bike -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_907021-MLU73992494194_012024-O.webp"
+                            class="card-img-top" alt="Bicicleta Mountain Bike para trilhas e terrenos acidentados"
+                            loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Bicicleta Mountain Bike
+                            </h5>
+                            <p class="card-text">R$ 1.500,00</p>
+                            <button class="btn btn-primary" aria-label="Adicionar Bicicleta Mountain Bike ao carrinho">
+                                <i class="bi bi-cart-plus me-2" aria-hidden="true"></i>Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 - Bicicleta Urbana -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_703739-MLU77107787632_062024-O.webp"
+                            class="card-img-top" alt="Bicicleta Urbana para deslocamento diário na cidade"
+                            loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Bicicleta Urbana
+                            </h5>
+                            <p class="card-text">R$ 1.200,00</p>
+                            <button class="btn btn-primary" aria-label="Adicionar Bicicleta Urbana ao carrinho">
+                                <i class="bi bi-cart-plus me-2" aria-hidden="true"></i>Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 - Bicicleta Speed -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_621214-MLB82749133730_032025-O.webp"
+                            class="card-img-top" alt="Bicicleta Speed para competições e alta velocidade"
+                            loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Bicicleta Speed
+                            </h5>
+                            <p class="card-text">R$ 2.500,00</p>
+                            <button class="btn btn-primary" aria-label="Adicionar Bicicleta Speed ao carrinho">
+                                <i class="bi bi-cart-plus me-2" aria-hidden="true"></i>Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 - Bicicleta Infantil -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_790572-MLU77180703380_072024-O.webp"
+                            class="card-img-top" alt="Bicicleta Infantil para crianças" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Bicicleta Infantil
+                            </h5>
+                            <p class="card-text">R$ 800,00</p>
+                            <button class="btn btn-primary" aria-label="Adicionar Bicicleta Infantil ao carrinho">
+                                <i class="bi bi-cart-plus me-2" aria-hidden="true"></i>Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 - Bicicleta Dobrável -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_907455-MLU77095097214_062024-O.webp"
+                            class="card-img-top" alt="Bicicleta Dobrável para transporte fácil e compacto"
+                            loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Bicicleta Dobrável
+                            </h5>
+                            <p class="card-text">R$ 1.800,00</p>
+                            <button class="btn btn-primary" aria-label="Adicionar Bicicleta Dobrável ao carrinho">
+                                <i class="bi bi-cart-plus me-2" aria-hidden="true"></i>Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 - Bicicleta Elétrica -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_801029-MLB82173397587_012025-O.webp"
+                            class="card-img-top" alt="Bicicleta Elétrica para deslocamento rápido e eficiente"
+                            loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Bicicleta Elétrica
+                            </h5>
+                            <p class="card-text">R$ 3.500,00</p>
+                            <button class="btn btn-primary" aria-label="Adicionar Bicicleta Elétrica ao carrinho">
+                                <i class="bi bi-cart-plus me-2" aria-hidden="true"></i>Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="mb-5" aria-labelledby="sobre-heading">
+            <h2 id="sobre-heading" class="text-center mb-4">Sobre a BikeStore</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <p class="lead text-center">
+                        A <strong>BikeStore</strong> é o seu destino online para encontrar as melhores bicicletas e
+                        acessórios. Nosso objetivo é proporcionar uma experiência de compra fácil e segura, oferecendo
+                        produtos de alta qualidade para ciclistas de todos os níveis.
+                    </p>
+                    <p class="text-center">
+                        Seja você um ciclista profissional, um entusiasta de trilhas ou alguém que busca uma bicicleta
+                        para o dia a dia, temos opções que atendem às suas necessidades.
+                    </p>
+                    <p class="text-center">
+                        Na BikeStore, acreditamos que pedalar é mais do que um esporte ou meio de transporte: é um
+                        estilo de vida. Por isso, estamos comprometidos em ajudar você a encontrar a bicicleta perfeita
+                        para suas aventuras.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Carrinho Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="carrinhoOffcanvas" aria-labelledby="carrinhoOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 id="carrinhoOffcanvasLabel" class="offcanvas-title">
+                <i class="bi bi-cart4 me-2" aria-hidden="true"></i>Carrinho de Compras
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Fechar carrinho"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul id="carrinho-items" class="list-group" aria-live="polite">
+                <!-- Itens do carrinho serão inseridos aqui -->
+            </ul>
+            <div class="mt-3">
+                <h5>Total: R$ <span id="carrinho-total">0.00</span></h5>
+                <button class="btn btn-success w-100" onclick="finalizarCompra()" aria-label="Finalizar compra">
+                    <i class="bi bi-check-circle me-2" aria-hidden="true"></i>Finalizar Compra
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmação de Compra -->
+    <div class="modal fade" id="confirmacaoCompraModal" tabindex="-1" aria-labelledby="confirmacaoCompraModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="confirmacaoCompraModalLabel" class="modal-title">Compra Finalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <i class="bi bi-check2-circle text-success fs-1 d-block text-center mb-3" aria-hidden="true"></i>
+                    <p class="text-center">Sua compra foi finalizada com sucesso!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Fechar modal">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 BikeStore. Todos os direitos reservados.</p>
+        <p>
+            <a href="#" class="text-white" aria-label="Política de Privacidade">
+                <i class="bi bi-shield-lock me-2" aria-hidden="true"></i>Política de Privacidade
+            </a> |
+            <a href="#" class="text-white" aria-label="Termos de Serviço">
+                <i class="bi bi-file-text me-2" aria-hidden="true"></i>Termos de Serviço
+            </a>
+        </p>
+    </footer>
+
+    <!-- Botão de Voltar ao Topo -->
+    <button id="btn-topo" class="btn btn-primary" onclick="topFunction()" title="Voltar ao topo"
+        aria-label="Voltar ao topo">
+        <i class="bi bi-arrow-up me-2" aria-hidden="true"></i>Voltar ao Topo
+    </button>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Script personalizado -->
+    <script src="Js/script.js" defer></script>
+</body>
+
+</html>
